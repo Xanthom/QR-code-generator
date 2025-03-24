@@ -13,7 +13,7 @@ inquirer
 
     const url = answers.URL;
     var qr_png = qr.image('url');
-    qr_png.pipe(fs.createWriteStream('i_love_qr.png'));
+    qr_png.pipe(fs.createWriteStream('qr.png'));
 
     fs.writeFile('URL.txt', url , (err) => {
         if (err) throw err;
